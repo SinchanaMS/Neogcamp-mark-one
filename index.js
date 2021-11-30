@@ -4,7 +4,7 @@ var userName = readlineSync.question("Please enter your username: ")
 console.log("Welcome to 'How Well Do You Know Me?', ", userName, "!")
 score = 0
 
-var highScores = ["Sinchana: 4", "Sahana: 3"]
+var highScores = ["Sinchana: 5", "Sahana: 3"]
 
 var questionOne = {
 question: "What is my favourite book? ",
@@ -27,7 +27,12 @@ var questionFour = {
     answer: "ukulele"
   }
 
-var questions = [questionOne, questionTwo, questionThree, questionFour]
+var questionFive = {
+    question: "Where do I live?",
+    answer: "mysore"
+}
+
+var questions = [questionOne, questionTwo, questionThree, questionFour, questionFive]
 
 for (i=0; i<questions.length; i++){
 userAnswer =readlineSync.question(questions[i].question)
